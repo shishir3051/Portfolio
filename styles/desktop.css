@@ -1,3 +1,7 @@
+body{
+    scroll-behavior: smooth;
+}
+
 .col-1{width: 8.33%;}
 .col-2{width: 16.66%;}
 .col-3{width: 25%;}
@@ -22,6 +26,7 @@
 }
 
 .nav-menu{
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
@@ -88,4 +93,10 @@ width:140px;
     transform: scale(1.4);
     transition: 1.s all;
     border-radius: 30%;
+}
+
+@supports not (display: flex){
+    .nav-menu {
+        display: block;
+    }
 }

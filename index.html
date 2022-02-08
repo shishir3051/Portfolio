@@ -13,14 +13,13 @@
         />
         <link rel="icon" href="./image/professional-portfolio.png" />
 
-        
         <!-- Css for mobile -->
         <link rel="stylesheet" href="./styles/Mobile.css" />
         <!-- Css for desktop -->
         <link
-        rel="stylesheet"
-        href="./styles/desktop.css"
-        media="screen and (min-width:992px)"
+            rel="stylesheet"
+            href="./styles/desktop.css"
+            media="screen and (min-width:992px)"
         />
     </head>
     <body>
@@ -43,7 +42,7 @@
             <div class="nav-menu col-6">
                 <a href="#">Home</a>
                 <a href="#about-me">About Me</a>
-                <a href="#">Skills</a>
+                <a href="#Information's">information's</a>
                 <a href="#">Qualification</a>
             </div>
         </div>
@@ -126,11 +125,11 @@
 
         <div class="div-clear"></div>
 
-        <div class="professional-experience">
+        <div class="professional-experience" id="Information's">
             <div class="work-experience col-4">
                 <div class="card">
                     <div class="card-icon">
-                        <i class="fas fa-briefcase fa-3x"></i>
+                        <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="card-title">
                         <h4>Work Experience</h4>
@@ -173,8 +172,89 @@
                     </div>
                 </div>
             </div>
-            <div class="educational-experience"></div>
-            <div class="skills"></div>
+            <div class="educational-experience col-4">
+                <div class="card">
+                    <div class="card-icon-edu">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="card-title">
+                        <h4>Educational Experience</h4>
+                    </div>
+                    <div class="card-description">
+                        <ol>
+                            <li>
+                                <strong>B.Sc. in Software Engineering</strong>
+                                <br />
+                                01/01/2020 - Till now . <br />
+                                Daffodil International University <br />
+                                Dhanmondi-32,Dhaka Bangladesh.
+                                <strong
+                                    ><a
+                                        href="https://www.daffodilvarsity.edu.bd/"
+                                        >www.daffodilvarsity.edu.bd</a
+                                    ></strong
+                                >
+                            </li>
+                            <hr />
+                            <li>
+                                <strong>Higher Secondary Education</strong
+                                ><br />
+                                Ispahani Public School and College. <br />
+                                01-07-2016 to 01-04-2018. <br />
+                                Cumilla Cantonment,Cumilla,Bangladesh. <br />
+                            </li>
+                            <hr />
+                            <li>
+                                <strong>Secondary Education</strong> <br />
+                                Cumilla Modern High School. <br />
+                                01-01-2011 to 01-02-2016. <br />
+                                Ranir bazar,Kandirpar,Cumilla,Bangladesh.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="skills col-4">
+                <div class="card">
+                    <div class="card-icon-edu">
+                        <img class="img" src="./image/skill.png" alt="" />
+                    </div>
+                    <div class="card-title">
+                        <h4>Skills</h4>
+                    </div>
+                    <div class="card-description">
+                        <div class="skills-container">
+                            <ul>
+                                <li class="html">HTML</li>
+                                <li class="css">Css</li>
+                                <li class="javascript">Javascript</li>
+                                <li class="bootstrap">Bootstrap</li>
+                                <li class="github">Github</li>
+                                <li class="java">Java</li>
+                                <li class="node">Node js.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="Contact-area">
+            <div class="contact-me col-6">
+                <form action="mailto:gaziur35-3051@diu.ed.bd " method="post" enctype="text/plain">
+
+                    <input type="text" placeholder="Enter Your Name" name="name" >
+                    <input type="email" placeholder="Enter Your Email" name="name" >
+                    <textarea name="massage" id="" cols="30" rows="10"> massage</textarea>
+                     
+                    <button type="submit" value="Submit" >Send</button>
+                    <button type="reset" value="Reset" >Reset</button>
+                </form>
+
+            </div>
+            <div class="another-way col-6">
+
+            </div>
         </div>
     </body>
 </html>

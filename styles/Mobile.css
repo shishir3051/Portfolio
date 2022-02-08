@@ -5,7 +5,7 @@
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
 }
-body{
+body {
     position: relative;
     scroll-behavior: smooth;
 }
@@ -65,13 +65,16 @@ a {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
+   
 }
+
 .nav-menu a {
     background-color: #0c6168;
     border-radius: 10px;
     margin: 7px;
     padding: 10px;
     font-weight: bolder;
+    
 }
 .nav-menu a:hover {
     background-color: #88b2b6;
@@ -184,17 +187,27 @@ p {
     align-items: center;
     padding: 10px 10px;
 }
+.about-me p:hover{
+    background-color: rgba(64, 127, 182, 0.418);
+}
 .about-me a {
     font-size: 1.2rem;
 }
 
 .card-description > ol {
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .professional-experience {
-    padding: 1% 2%;
+    padding: 1% 0%;
     background-color: darkcyan;
+}
+.work-experience {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.work-experience .card:hover {
+    background-color: cornsilk;
 }
 
 .professional-experience .card {
@@ -202,29 +215,179 @@ p {
     border-radius: 5px;
 
     transition: 0.5s;
-    height: 500px;
+    height: 550px;
 }
 .professional-experience .card:hover {
-    box-shadow: rgb(248, 250, 250) 0px 20px 30px -10px;
+    box-shadow: rgb(215, 154, 223) 0px 20px 30px 10px;
 }
 .card-description {
+    padding: 10px;
+}
+.card-description li {
     padding: 10px;
 }
 .card-icon {
     text-align: center;
     border-radius: 50px;
+    padding: 5px;
+    font-size: 60px;
 }
-.card-icon > i {
-    margin-top: 30px;
-}
+
 .card-title h4 {
     text-align: center;
     font-weight: bold;
     font-size: 28px;
+    background-color: chartreuse;
+    padding: 5px;
 }
 
+
+.card-icon-edu {
+    padding: 7px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.educational-experience {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.educational-experience :hover {
+    background-color: cornsilk;
+}
+
+.img {
+    width: 50px;
+}
+.skills {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.skills .card:hover {
+    background-color: cornsilk;
+}
+.skills-container > ul {
+    padding-left: 20px;
+}
+.skills-container li {
+    list-style: none;
+    margin: 18px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+.skills-container li::before {
+    content: "";
+    background-color: rgb(127, 14, 233);
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: calc(100% + 1px);
+    border-radius: 5px;
+    left: 0;
+}
+.skills-container li::after {
+    content: "";
+    background-color: rgb(80, 226, 43);
+    height: 10px;
+    left: 0;
+    width: 0;
+    position: absolute;
+    top: calc(100% + 1px);
+    border-radius: 5px;
+    opacity: 0.8;
+
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.skills-container li.html::after {
+    animation-name: html;
+}
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+.skills-container li.css::after {
+    animation-name: css;
+}
+@keyframes css {
+    to {
+        width: 80%;
+    }
+}
+.skills-container li.javascript::after {
+    animation-name: javascript;
+}
+@keyframes javascript {
+    to {
+        width: 10%;
+    }
+}
+.skills-container li.bootstrap::after {
+    animation-name: bootstrap;
+}
+@keyframes bootstrap {
+    to {
+        width: 5%;
+    }
+}
+.skills-container li.github::after {
+    animation-name: github;
+}
+@keyframes github {
+    to {
+        width: 50%;
+    }
+}
+.skills-container li.java::after {
+    animation-name: java;
+}
+@keyframes java {
+    to {
+        width: 85%;
+    }
+}
+.skills-container li.node::after {
+    animation-name: node;
+}
+@keyframes node {
+    to {
+        width: 10%;
+    }
+}
+
+.skills-container {
+    font-weight: bold;
+    padding-right: 45px;
+}
 .professional-experience::after {
     clear: both;
     display: table;
     content: "";
 }
+
+.Contact-area{
+    background-color: #0c6168;
+}
+
+.contact-me{
+    text-align: center;
+    padding: 2% 7%;
+}
+.contact-me input,textarea{
+    padding: 10px;
+    font-size:18px;
+    width: 100%;
+
+}
+
+.Contact-area::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+

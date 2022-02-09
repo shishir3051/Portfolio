@@ -65,7 +65,6 @@ a {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-   
 }
 
 .nav-menu a {
@@ -74,7 +73,6 @@ a {
     margin: 7px;
     padding: 10px;
     font-weight: bolder;
-    
 }
 .nav-menu a:hover {
     background-color: #88b2b6;
@@ -167,6 +165,7 @@ p {
     margin: 20px auto;
     width: 80px;
     text-align: center;
+    color: white;
 }
 
 .about-me-image img {
@@ -187,7 +186,7 @@ p {
     align-items: center;
     padding: 10px 10px;
 }
-.about-me p:hover{
+.about-me p:hover {
     background-color: rgba(64, 127, 182, 0.418);
 }
 .about-me a {
@@ -240,7 +239,6 @@ p {
     background-color: chartreuse;
     padding: 5px;
 }
-
 
 .card-icon-edu {
     padding: 7px;
@@ -370,19 +368,86 @@ p {
     content: "";
 }
 
-.Contact-area{
+.Contact-area {
     background-color: #0c6168;
 }
+.h {
+    text-align: center;
+    /* padding: 20px; */
+    color: beige;
+    text-transform: uppercase;
 
-.contact-me{
+    margin: 0 auto;
+}
+.h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: beige;
+    text-transform: capitalize;
+
+    margin: 0 auto;
+}
+.h2:hover {
+    color: rgb(14, 206, 14);
+    text-shadow: 4px 4px 6px;
+    font-size: 30px;
+}
+.h:hover {
+    color: rgb(14, 206, 14);
+    text-shadow: 4px 4px 6px;
+    font-size: 30px;
+}
+
+.contact-me {
     text-align: center;
     padding: 2% 7%;
 }
-.contact-me input,textarea{
+.contact-me input,
+textarea {
     padding: 10px;
-    font-size:18px;
+    font-size: 18px;
     width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    resize: none;
+    font-weight: bold;
+    background-color: darkgrey;
+}
+input:focus,
+textarea:focus {
+    background-color: aliceblue;
+}
+button {
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-weight: bold;
+}
 
+button:hover {
+    background-color: rgb(14, 238, 133);
+}
+
+.btn {
+    border: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    background-color: rgb(153, 137, 196);
+}
+.btn:hover {
+    width: 60px;
+    height: 60px;
+}
+
+.media-button {
+    text-align: center;
+    padding-top: 40px;
 }
 
 .Contact-area::after {
@@ -391,3 +456,16 @@ p {
     content: "";
 }
 
+footer {
+    background-color: cornflowerblue;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+footer::after {
+    clear: both;
+    display: table;
+    content: "";
+}

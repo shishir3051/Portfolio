@@ -46,7 +46,7 @@ a {
     width: 100%;
 }
 .navbar {
-    background-color: coral;
+    background-color: rgb(170, 174, 184);
     padding: 1% 7%;
     text-align: center;
 }
@@ -201,6 +201,7 @@ p {
     padding: 1% 0%;
     background-color: darkcyan;
 }
+
 .work-experience {
     border: 1px solid black;
     border-radius: 10px;
@@ -467,8 +468,11 @@ footer {
     height: 50px;
     text-align: center;
     padding-top: 15px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
+
+    
+    margin: 0 auto;
 }
 footer::after {
     clear: both;

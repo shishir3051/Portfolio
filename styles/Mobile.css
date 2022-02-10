@@ -187,7 +187,7 @@ p {
     padding: 10px 10px;
 }
 .about-me p:hover {
-    background-color: rgba(64, 127, 182, 0.418);
+    background-color: rgb(216, 203, 152);
 }
 .about-me a {
     font-size: 1.2rem;
@@ -391,11 +391,13 @@ p {
     color: rgb(14, 206, 14);
     text-shadow: 4px 4px 6px;
     font-size: 30px;
+    transition: 0.3s;
 }
 .h:hover {
     color: rgb(14, 206, 14);
     text-shadow: 4px 4px 6px;
     font-size: 30px;
+    transition: 0.3s;
 }
 
 .contact-me {
@@ -428,6 +430,9 @@ button {
 
 button:hover {
     background-color: rgb(14, 238, 133);
+    width: 110px;
+    height: 50px;
+    transition: 0.3s;
 }
 
 .btn {
@@ -443,6 +448,7 @@ button:hover {
 .btn:hover {
     width: 60px;
     height: 60px;
+    transition: 0.3s;
 }
 
 .media-button {
